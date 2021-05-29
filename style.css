@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+.site-navigation a {
+    text-decoration: none;
+    padding-right: 50px;
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -362,14 +366,9 @@ a:hover {
     z-index: 2;
 }
 
+
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
+  
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -677,12 +676,14 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .h1 {
@@ -767,7 +768,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #8f97b3;
 }
 
 .bgc-atomic-tangerine {
@@ -775,7 +776,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
+}
+
+.tc-white-2 {
+    color : black;
 }
 
 .btn-atomic-tangerine {
@@ -822,9 +827,14 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/presentation-ConvertImage.jpg");
 }
 
+.text-center img {
+    width : 100%;
+    height : 100px;
+    object-fit: contain;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
