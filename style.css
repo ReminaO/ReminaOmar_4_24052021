@@ -40,10 +40,6 @@ button {
     padding: 100px 50px;
 }
 
-.bloc-md {
-    padding: 50px;
-}
-
 .bloc-sm {
     padding: 20px 50px;
 }
@@ -68,10 +64,6 @@ button {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
-}
-
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -85,10 +77,6 @@ button {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
-
-.b-parallax {
-    background-attachment: fixed;
 }
 
 .d-bloc {
@@ -139,14 +127,6 @@ button {
     color: rgba(0, 0, 0, .6);
 }
 
-.voffset {
-    margin-top: 30px;
-}
-
-.voffset-lg {
-    margin-top: 80px;
-}
-
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -158,10 +138,21 @@ button {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
+.row-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.icon-social {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-social a {
+    padding-right : 35px;
+    padding-left : 35px;
+}
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -205,11 +196,6 @@ button {
     width: 26px;
 }
 
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .btn {
     margin: 0 5px 5px 0;
 }
@@ -218,36 +204,11 @@ button {
     outline: none!important;
 }
 
-.btn-rd {
-    border-radius: 40px;
-}
-
-.btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-}
-
 .icon-md {
     font-size: 30px!important;
 }
 
-.icon-lg {
-    font-size: 60px!important;
-}
 
-.sm-shadow {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-}
-
-a[data-lightbox] {
-    position: relative;
-    display: block;
-    text-align: center;
-}
-
-h1,
 h2,
 h3,
 h4,
@@ -259,7 +220,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
 
 .container {
@@ -267,18 +227,16 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.txt-orange {
+    color: white;
 }
 
 p {
     font-size: 15px;
-}
-
-.tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
-    font-size: 15px;
-    font-weight: bold;
 }
 
 .cta-hero {
@@ -295,102 +253,62 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+label {
+    font-weight: bold;
+    color: #333333!important;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 20px;
     color: #333333!important;
 }
 
-.med-width-whitespace {
-    max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+.special-dropdown-nav li {
+    list-style: none;
 }
 
-h1 {
-    color: #333333!important;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-.icons {
-    margin-bottom: 14px;
-    margin-top: 24px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.white {
-    color: #FFFFFF!important;
+.tc-white-2 {
+    color: white!important;
+    text-align: center;
 }
 
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
-
-.bold-link {
-    font-weight: 900;
-    text-decoration: underline!important;
-}
-
-.bgc-white {
-    background-color: #FFFFFF;
-}
-
-.bgc-dark-slate-blue {
-    background-color: #8f97b3;
-}
-
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
+.tc-white-3 {
+    color: rgb(226, 96, 35)!important;
+    text-align: center;
 }
 
 .tc-white {
     color: white!important;
 }
 
+.bgc-white {
+    background-color: #FFFFFF!important;
+}
+
+.bgc-atomic-tangerine {
+    background-color: rgb(122, 36, 36);
+}
+
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: rgb(122, 36, 36);
     color: #FFFFFF!important;
 }
-
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/presentation-ConvertImage.jpg");
-}
-
-.text-center img {
-    width : 100%;
-    height : 150px;
-    object-fit: contain;
+.btn-atomic-tangerine:hover {
+    background-color: rgb(177, 79, 79);
 }
 @media (max-width: 1024px) {
     .bloc {
@@ -420,5 +338,148 @@ h1 {
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+}
+
+.bloc-md {
+    padding: 50px;
+}
+
+.bg-t-edge {
+    background: top no-repeat;
+}
+
+.b-parallax {
+    background-attachment: fixed;
+}
+
+.voffset {
+    margin-top: 30px;
+}
+
+.voffset-lg {
+    margin-top: 80px;
+}
+
+#bloc-1-hero h1 {
+    font-size: 32px;
+}
+
+.mg-md {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-rd {
+    border-radius: 40px;
+}
+
+.btn-clean {
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-bottom-color: rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
+    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+}
+
+.icon-lg {
+    font-size: 60px!important;
+}
+
+.sm-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+a[data-lightbox] {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+.tight-width-whitespace {
+    max-width: 600px;
+    margin: auto auto auto auto;
+}
+
+.med-width-whitespace {
+    max-width: 800px;
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.icons {
+    margin-bottom: 14px;
+    margin-top: 24px;
+}
+
+.portfolio-thumb {
+    margin-bottom: 24px;
+}
+
+.portfolio-row {
+    margin-bottom: 44px;
+    margin-top: 50px;
+}
+
+.avatar {
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+}
+
+.black-background {
+    background-color: rgba(88, 80, 55, 0.7);
+    padding: 20px 20px 20px 20px;
+}
+
+.bold-link {
+    font-weight: 900;
+    text-decoration: underline!important;
+}
+
+.bgc-dark-slate-blue {
+    background-color: #8f97b3;
+}
+
+.tc-white {
+    color: white!important;
+}
+.ltc-white {
+    color: #FFFFFF!important;
+}
+
+.icon-dark-slate-blue {
+    color: #364577!important;
+    border-color: #364577!important;
+}
+
+.bg-dots-bg {
+    background-image: url("img/dots-bg.png");
+}
+
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}
+
+.bg-banniere {
+    background-image: url("img/la-chouette-agence-banniere.jpg");
+}
+
+.bg-presentation {
+    background-image: url("img/presentation-ConvertImage.jpg");
+}
+
+.text-center img {
+    width : 100%;
+    height : 150px;
+    object-fit: contain;
+    text-align: center;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .navbar .nav {
+        max-width: 80%
     }
 }
