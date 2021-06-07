@@ -282,12 +282,12 @@ h3 {
 }
 
 .tc-white-2 {
-    color: white!important;
+    color: rgb(255, 255, 255)!important;
     text-align: center;
 }
 
 .tc-white-3 {
-    color: rgb(226, 96, 35)!important;
+    color: rgb(255, 255, 255)!important;
     text-align: center;
 }
 
@@ -430,7 +430,7 @@ h2 {
 }
 
 .black-background {
-    background-color: rgba(88, 80, 55, 0.7);
+    background-color: rgb(91, 71, 63);
     padding: 20px 20px 20px 20px;
 }
 
