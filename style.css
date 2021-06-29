@@ -3,8 +3,8 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /*-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
 }
 
 a,
@@ -24,10 +24,10 @@ button {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
     position: relative;
 }
 
@@ -54,9 +54,9 @@ button {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
+   /* -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
-    -o-background-size: auto!important;
+    -o-background-size: auto!important;*/
     background-size: auto!important;
 }
 
@@ -346,13 +346,6 @@ h3 {
         width: 100%;
         margin: 0;
     }
-    /*.bloc-2{
-        width: 90%;
-        margin: 0;
-        padding-left: 15px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }*/
 
     .icon-social a {
         padding-right : 20px;
@@ -361,21 +354,18 @@ h3 {
     .contact-form {
         display: flex;
         flex-direction: column;
-        align-items: left;
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    .contact-text h3 {
-        text-align: left;
-    }
     .row-social{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-right: 40px;
     }
+
     .row-social1{
         display: flex;
         flex-direction: column;
